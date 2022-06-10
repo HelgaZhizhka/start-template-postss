@@ -1,4 +1,4 @@
-# Webpack 5 Boilerplate Template
+# Webpack 5 Postcss Boilerplate Template for static html pages
 
 
 # Setup
