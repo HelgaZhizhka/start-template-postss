@@ -1,0 +1,27 @@
+:root {
+    --badge-size-sm: 1.25rem;
+}
+.badge {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    &, &__value {
+        line-height: 1;
+    }
+    &__value {
+        letter-spacing: 0.02em;
+        font-size: .875rem;
+        font-weight: 600;
+    }
+    &_sm {
+        min-width: var(--badge-size-sm);
+        height: var(--badge-size-sm);
+        padding: 0 0.4375rem;
+        border-radius: calc((var(--badge-size-sm)/2));
+    }
+    &.is-unread {
+        background-color: var(--base-color);
+        color: var(--color-white);
+    }
+}

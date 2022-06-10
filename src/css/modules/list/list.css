@@ -1,0 +1,32 @@
+
+/* initial list styles */
+dl {
+	margin-bottom: 1.5rem;
+}
+
+dt {
+	font-weight: 600;
+}
+
+dd {
+	margin-left: 0;
+	margin-bottom: 1.5rem;
+}
+
+ol,
+ul {
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+
+	& ol,
+	& ul {
+		margin-bottom: 0;
+	}
+}
+
+.list {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}

@@ -1,0 +1,13 @@
+.page {
+    --transparent: 1;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* styles for state loading app */
+    &[data-state='loading'] {
+        --transparent: .5;
+		* {
+			opacity: var(--transparent);
+		}
+    }
+}

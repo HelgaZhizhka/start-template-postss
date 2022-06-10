@@ -1,0 +1,12 @@
+.status {
+    letter-spacing: 0.02em;
+    font-size: .875rem;
+    line-height: 1.16;
+    font-family: var(--font-family);
+    &_online {
+        color: var(--state-success);
+    }
+    &_offline {
+        color: var(--state-danger);
+    }
+}

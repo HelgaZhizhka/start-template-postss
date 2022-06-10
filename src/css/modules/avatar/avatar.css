@@ -1,0 +1,26 @@
+:root {
+	--avatar-size: 57px;
+	--avatar-radius: 13px;
+}
+.avatar {
+	display: block;
+	position: relative;
+	background-size: cover;
+	overflow: hidden;
+	size: var(--avatar-size);
+	border-radius: var(--avatar-radius);
+	user-select: none;
+	&__image {
+		size: 100%;
+		object-fit: cover;
+	}
+    &.no-image {
+		font-family: var(--font-family);
+		font-size: 2.56rem;
+		font-weight: 700;
+		line-height: 50px;
+		color: var(--color-white);
+		letter-spacing: 0.02em;
+		text-align: center;
+    }
+}

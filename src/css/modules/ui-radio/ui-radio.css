@@ -1,0 +1,58 @@
+.ui-radio {
+	vertical-align: middle;
+	margin: 0 3px 0 0;
+	size: 18px !important;
+}
+
+.ui-radio + .label {
+	user-select: none;
+	cursor: pointer;
+	display: inline-block;
+    margin: 0;
+	vertical-align: middle;
+	line-height: 18px;
+}
+
+.ui-radio:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+
+.ui-radio:not(checked) + .label {
+	position: relative;
+	padding: 0 0 0 25px;
+    color: #494848;
+    font-family: var(--font-family);
+}
+
+.ui-radio:not(checked) + .label::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	size: 18px;
+	background-color: white;
+	border: 1px solid var(--base-color);
+	border-radius: 50%;
+}
+.ui-radio:not(checked) + .label::after {
+	content: '';
+	position: absolute;
+	display: none;
+	top: 4px;
+	left: 4px;
+	size: 10px;
+	background-color: var(--base-color);
+	border-radius: 50%;
+}
+
+.ui-radio:checked + .label {
+    color: #494848
+}
+
+.ui-radio:checked + .label::after {
+	display: block;
+}
+.ui-radio:hover + .label::before {
+	border: 2px solid var(--base-color);
+}
